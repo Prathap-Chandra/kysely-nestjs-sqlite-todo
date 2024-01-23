@@ -18,6 +18,6 @@ export class Todo {
     this.title = todoData.title;
     this.description = todoData.description;
     this.completed = todoData.completed;
-    this.dueDate = todoData.due_date;
+    this.due_date = todoData.due_date;
   }
 }

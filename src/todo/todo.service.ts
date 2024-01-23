@@ -10,7 +10,7 @@ export class TodoService {
     return this.todoRepository.getAll();
   }
 
-  async getById(id: string): Promise<Todo> {
+  async getById(id: string) {
     // Implement logic to fetch a todo by ID from your data source
     // For example, using a repository or another method
     const todo = await this.todoRepository.findOne(id);

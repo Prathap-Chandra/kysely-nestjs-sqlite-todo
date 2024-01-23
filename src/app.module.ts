@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TodoModule } from './todo/todo.module';
 import { DatabaseModule } from './database/database.module';
+import { FruitsModule } from './fruits/fruits.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { DatabaseModule } from './database/database.module';
       }),
     }),
     TodoModule,
+    FruitsModule,
   ],
 })
 export class AppModule {}
